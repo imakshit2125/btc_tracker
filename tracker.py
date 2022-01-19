@@ -5,8 +5,8 @@ import time
 api_key = 'your_coinmarketcap_api_key'
 bot_token = 'your_telegram_bot_token'
 chat_id = 'your_telegram_account_chat_id_here'
-threshold = 30000
-time_interval = 5 * 60 # in seconds
+threshold = 30000 # If the price is below our threshold, out tracker will send us alert
+time_interval = 5 * 60 # Periodic time after which our tracker send us alert
 
 
 def get_btc_price():
